@@ -7,7 +7,7 @@ import (
 	commonStructs "github.com/LanceLRQ/deer-common/structs"
 )
 
-func AnalysisResult(caseName string, result *commonStructs.JudgeResult) error {
+func AnalysisResult(result *commonStructs.JudgeResult) error {
 	name, ok := constants.FlagMeansMap[result.JudgeResult]
 	if !ok {
 		name = "Unknown"

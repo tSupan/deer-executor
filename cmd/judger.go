@@ -1,8 +1,7 @@
 package cmd
 
 import (
-	"github.com/LanceLRQ/deer-common/constants"
-	"github.com/LanceLRQ/deer-executor/v2/init"
+	"github.com/tSupan/deer-executor/init"
 )
 
 func Judger() error {
@@ -14,7 +13,7 @@ func Judger() error {
 	if err != nil {
 		return err
 	}
-	err = init.AnalysisResult("case 1", result, constants.JudgeFlagAC)
+	err = init.AnalysisResult(result)
 	if err != nil {
 		return err
 	}
